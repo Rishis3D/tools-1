@@ -1,0 +1,4 @@
+[run]
+source = tests
+[report]
+show_missing = 1
