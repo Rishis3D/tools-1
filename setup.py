@@ -23,7 +23,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.0.0a1',
+    version='0.1.0a1',
 
     description='Python tools for daily uses',
     long_description=long_description,
@@ -90,10 +90,9 @@ setup(
     setup_requires=[
         'nose>=1.0',
         'mox>=0.5',
-        'bcTesting>=0.0'
+        'bcTesting>=0.2'
     ],
     dependency_links=[
-        'https://github.com/barishcb/testing/archive/master.zip#egg=bcTesting-0.0'
     ],
 
     # If there are data files included in your packages that need to be
@@ -113,9 +112,9 @@ setup(
     # To provide executable scripts, use entry points in preference to the
     # "scripts" keyword. Entry points provide cross-platform support and allow
     # pip to create the appropriate form of executable for the target platform.
-    # entry_points={
-    #     'console_scripts': [
-    #         'sample=sample:main',
-    #     ],
-    # },
+    entry_points={
+        'console_scripts': [
+            'sequenceLister=bcTools.tools:sequenceLister',
+        ],
+    },
 )
