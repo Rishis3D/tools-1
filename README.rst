@@ -35,14 +35,39 @@ Prerequisites
 
 * ``bcTools`` was tested only on Python 2.7, on both Linux and Windows. It should work on any later version as well.
 
-Installation process
---------------------
+Installation using pip
+----------------------
 
-Installing ``bcTools`` is very simple. Once you download and unzip the package, you just have to execute the standard ``python setup.py install``. The setup script will then place the ``bcTools`` module into ``site-packages`` in your Python's installation library.
-
-Alternatively, since ``bcTools`` is listed in the `Python Package Index <http://pypi.python.org/pypi/bcTools>`_ (PyPI), you can install it using your favorite Python packaging/distribution tool, for example with::
+Alternatively, since ``tools`` is listed in the `Python Package Index <http://pypi.python.org/pypi/tools>`_ (PyPI), you can install it with::
 
     > pip install bcTools
+
+Installation From Source
+------------------------
+
+Installing ``tools`` is very simple. Once you download and unzip the package, you just have to execute the standard ``python setup.py install``. The setup script will then place the ``tools`` module into ``site-packages`` in your Python's installation library.
+
+Setps using normal python ::
+
+    > cd <development_path>
+    > mkdir tmp
+    > cd tmp
+    > git clone https://github.com/barishcb/tools.git
+    > cd tools
+    > python setup.py build
+    > python setup.py test
+    > python setup.py install
+
+Setps using gnu make ::
+
+    > cd <development_path>
+    > mkdir tmp
+    > cd tmp
+    > git clone https://github.com/barishcb/testing.git
+    > cd testing
+    > make build
+    > make test
+    > make install
 
 It's recommended to run ``_build_tables.py`` in the ``bcTools`` code directory after installation to make sure the parsing tables are pre-generated. This can make your code run faster.
 
