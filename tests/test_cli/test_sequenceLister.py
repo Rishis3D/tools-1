@@ -3,7 +3,7 @@
 import argparse
 
 from bcTesting import testBase
-from bcTools.utilities import sequenceLister
+from bcTools.cli import sequenceLister
 
 
 class Test_SequenceLister(testBase.TestCase):

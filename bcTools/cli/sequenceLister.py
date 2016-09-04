@@ -23,3 +23,4 @@ def sequenceLister():
 	""" Initialize function for sequenceLister tool.
 	"""
 	parser = _getParser(sys.argv[1:])
+
