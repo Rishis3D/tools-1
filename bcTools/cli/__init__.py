@@ -1,3 +1,2 @@
-""" Initialize module for bcTools.utilities package
+""" Public interface for bcTools.cli
 """
-

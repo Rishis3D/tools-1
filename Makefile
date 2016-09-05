@@ -55,7 +55,8 @@ help::
 	@echo ""
 	@echo "These targets are simply run by your setup.py:"
 	@echo ""
-	@echo "* build - Compile the Python modules"
+	@echo "* build - Compile the Python modules, includes the conversion of ui and qrc files"
+	@echo "* install - Install the package to the local python with version as egg"
 	@echo "* test - Run the unittests"
 	@echo "* nosetests - Run the unittests"
 	@echo "* register - Register this package to PyPi"
@@ -66,7 +67,11 @@ help::
 #-----------------------------------------------------------------------------#
 # setup.py targets
 #-----------------------------------------------------------------------------#
-build nosetests devtest install register sdist clean::
+nosetests devtest install register sdist clean::
+	$(PYTHON) setup.py $@
+
+build:
+	$(PYTHON) setup.py build_ui --force
 	$(PYTHON) setup.py $@
 
 upload::

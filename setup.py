@@ -7,6 +7,14 @@ https://github.com/pypa/sampleproject
 
 # Always prefer setuptools over distutils
 from setuptools import setup, find_packages
+
+try:
+    from pyqt_distutils.build_ui import build_ui
+    cmdclass = {'build_ui': build_ui}
+except ImportError:
+    build_ui = None  # user won't have pyqt_distutils when deploying
+    cmdclass = {}
+
 # To use a consistent encoding
 from codecs import open
 from os import path
@@ -23,7 +31,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.1.0b1',
+    version='0.1.0b2',
 
     description='Python tools for daily uses',
     long_description=long_description,
@@ -87,6 +95,7 @@ setup(
 
     # List of dependencies to run the setup of this project
     setup_requires=[
+        'pyqt-distutils>=0.7',
         'nose>=1.0',
         'mox>=0.5',
         'bcTesting>=0.2'
@@ -107,6 +116,9 @@ setup(
     # In this case, 'data_file' will be installed into '<sys.prefix>/my_data'
     data_files=[
     ],
+
+    # Building pyqt classes
+    cmdclass=cmdclass,
 
     # To provide executable scripts, use entry points in preference to the
     # "scripts" keyword. Entry points provide cross-platform support and allow

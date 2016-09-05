@@ -1,0 +1,11 @@
+{
+    "files": [
+        ["resources/pyqt/dialogs/*.ui", "bcTools/gui/resources/_dialogs/"],
+        ["resources/pyqt/widgets/*.ui", "bcTools/gui/resources/_widgets/"],
+        ["resources/pyqt/*.qrc", "bcTools/gui/resources/"]
+    ],
+    "pyrcc": "pyrcc4",
+    "pyrcc_options": "",
+    "pyuic": "pyuic4",
+    "pyuic_options": "--from-import"
+}

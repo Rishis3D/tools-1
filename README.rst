@@ -33,7 +33,7 @@ Installation
 Prerequisites
 -------------
 
-* ``bcTools`` was tested only on Python 2.7, on both Linux and Windows. It should work on any later version as well.
+* ``bcTools`` was tested only on Python 2.7, PyQt4 and SIP on both Linux and Windows. It should work on any later version as well.
 
 Installation using pip
 ----------------------
