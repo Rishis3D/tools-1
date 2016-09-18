@@ -45,7 +45,7 @@ PACKAGE_BASE = $(MAKEFILE_LIST:%/Makefile=%)
 
 PYTHON = python
 
-ALL_TESTS = $(shell echo tests/*.py)
+ALL_TESTS = $(shell find tests -iname "*.py")
 
 #-----------------------------------------------------------------------------#
 # package-py targets

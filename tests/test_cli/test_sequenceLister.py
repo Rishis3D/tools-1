@@ -20,3 +20,4 @@ class Test_SequenceLister(testBase.TestCase):
 		"""
 		self.monkeyPatch("sys.argv", ["sequenceLister"])
 		self.assertFalse(sequenceLister.sequenceLister())
+
