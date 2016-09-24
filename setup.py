@@ -98,6 +98,8 @@ setup(
         'pyqt-distutils>=0.7',
         'nose>=1.0',
         'mox>=0.5',
+        'sphinx>=1.3',
+        'sphinx-pypi-upload',
         'bcTesting>=0.2'
     ],
     dependency_links=[
@@ -127,5 +129,8 @@ setup(
         'console_scripts': [
             'sequenceLister=bcTools.tools:sequenceLister',
         ],
+        'gui_scripts': [
+            'baseDialog=bcTools.gui.dialogs.baseDialog:main',
+        ]
     },
 )

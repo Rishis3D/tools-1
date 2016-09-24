@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="root">
+    <file>resources/stylesheets/DarkOrange/style.qss</file>
     <file>resources/icons/checkbox_checked.png</file>
     <file>resources/icons/checkbox_unchecked.png</file>
     <file>resources/icons/combobox_drop-down.png</file>
@@ -7,6 +8,5 @@
     <file>resources/icons/radiobutton_unchecked.png</file>
     <file>resources/icons/spinbox_down-button.png</file>
     <file>resources/icons/spinbox_up-button.png</file>
-    <file>resources/stylesheets/DarkOrange/main.qss</file>
   </qresource>
 </RCC>
