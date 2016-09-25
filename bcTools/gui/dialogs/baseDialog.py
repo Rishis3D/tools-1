@@ -1,10 +1,10 @@
-"""
+""" Base PyQt Dialog for all GUI tools inside the project
 """
 from PyQt4 import QtCore
 from PyQt4 import QtGui
 
 from bcTools.gui.resources import Ui_BaseDialog
-from bcTools.gui.resources import designer_rc
+from bcTools.gui.resources import styleSheets
 
 
 class BaseDialog(QtGui.QDialog):
@@ -38,19 +38,9 @@ class BaseDialog(QtGui.QDialog):
 
 
 def main():
-	css = QtCore.QFile(':/root/resources/stylesheets/DarkOrange/style.qss')
-	print css.exists()
-	css.open(QtCore.QIODevice.ReadOnly)
-	stylesheet = ""
-	if css.isOpen():
-		# ts = QTextStream(f)
-		# stylesheet = ts.readAll()
-		stylesheet = QtCore.QVariant(css.readAll()).toString()
-	css.close()
-	print stylesheet
 	application = QtGui.QApplication([])
 	dialog = BaseDialog()
-	dialog.setStyleSheet(stylesheet)
+	dialog.setStyleSheet(styleSheets.getStyleSheet("DarkOrange"))
 	dialog.show()
 	application.exec_()
 

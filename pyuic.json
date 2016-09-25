@@ -1,11 +1,11 @@
 {
     "files": [
-        ["resources/pyqt/dialogs/*.ui", "bcTools/gui/resources/_dialogs/"],
-        ["resources/pyqt/dialogs/*.qrc", "bcTools/gui/resources/_dialogs/"],
-        ["resources/pyqt/widgets/*.ui", "bcTools/gui/resources/_widgets/"],
-        ["resources/pyqt/widgets/*.qrc", "bcTools/gui/resources/_widgets/"],
-        ["resources/pyqt/*.ui", "bcTools/gui/resources/"],
-        ["resources/pyqt/*.qrc", "bcTools/gui/resources/"]
+        ["resources/pyqt/dialogs/*.ui", "bcTools/gui/_resources/_dialogs/"],
+        ["resources/pyqt/dialogs/*.qrc", "bcTools/gui/_resources/_dialogs/"],
+        ["resources/pyqt/widgets/*.ui", "bcTools/gui/_resources/_widgets/"],
+        ["resources/pyqt/widgets/*.qrc", "bcTools/gui/_resources/_widgets/"],
+        ["resources/pyqt/*.ui", "bcTools/gui/_resources/"],
+        ["resources/pyqt/*.qrc", "bcTools/gui/_resources/"]
     ],
     "pyrcc": "pyrcc4",
     "pyrcc_options": "",

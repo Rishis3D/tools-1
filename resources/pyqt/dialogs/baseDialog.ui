@@ -23,7 +23,11 @@
       <layout class="QHBoxLayout" name="bannerHLayout"/>
      </item>
      <item>
-      <layout class="QVBoxLayout" name="contentVLayout"/>
+      <layout class="QVBoxLayout" name="contentVLayout">
+       <item>
+        <widget class="QComboBox" name="comboBox"/>
+       </item>
+      </layout>
      </item>
     </layout>
    </item>
